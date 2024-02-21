@@ -1,21 +1,21 @@
 .Home {
-    text-align: center;
-    margin-top: 50px;
-  }  
+  text-align: center;
+  margin-top: 50px;
+}
 
 form {
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
-  button {
-    margin-left: 5px;
-  }
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+button {
+  margin-left: 5px;
+}
