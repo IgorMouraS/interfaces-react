@@ -1,4 +1,5 @@
 // src/App.js
+import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import './styles/App.css';
 import Home from './pages/Home';
@@ -22,6 +23,10 @@ function App() {
 
   return (
     <div className="App">
+      <Link to="/">Home</Link>
+      <Link to="/game">Game</Link>
+      <Link to="/fruit">Fruit</Link>
+      
       {content}
 
       <button onClick={handleClick} type="button">Jogo da Velha</button>
