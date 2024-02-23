@@ -5,7 +5,7 @@ import data_home from '../data/data-home';
 import List from '../components/List';
 import ItemCount from '../components/ItemCount';
 
-function Home() {
+function ListaDinamica() {
   const [items, setItems] = useState([]);
   const [text, setText] = useState('');
 
@@ -39,4 +39,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ListaDinamica;

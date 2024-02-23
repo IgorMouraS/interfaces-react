@@ -10,7 +10,7 @@ const apikey = import.meta.env.VITE_API_KEY;
 import '../styles/MoviesGrid.css'
 
 
-const Search = ({}) => {
+const SearchMovie = ({}) => {
   const [SearchParams] = useSearchParams();
 
   const [movies, setMovies] = useState([]);
@@ -41,4 +41,4 @@ const Search = ({}) => {
   )
 }
 
-export default Search
+export default SearchMovie

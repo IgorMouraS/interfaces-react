@@ -27,7 +27,7 @@ const Navbar = () => {
         <div>
             <nav id="navbar">
                 <h2>
-                    <Link to="movielib"><BiCameraMovie />MoviesLib</Link>
+                    <Link to="/movielib"><BiCameraMovie />MoviesLib</Link>
                 </h2>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="Busque um filme" onChange={searchMovies} value={search}/>
