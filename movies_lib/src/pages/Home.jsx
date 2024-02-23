@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { fetchTopRatedMovies } from "../data/api"
+import { fetchMovies } from "../data/api"
 
 import MovieCard from "../components/MovieCard";
 
@@ -16,8 +16,8 @@ const Home = () => {
   useEffect(() => {
 
     async function getTopRatedMovies() {
-      const movies = await fetchTopRatedMovies(movieURL, apiKey);
-      setTopMovies(movies);
+      const data = await fetchMovies(movieURL, apiKey);
+      setTopMovies(data);
     }
 
     getTopRatedMovies();
