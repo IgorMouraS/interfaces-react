@@ -1,0 +1,129 @@
+.home {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  transition: 4s;
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home .links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.home .links a {
+  background-color: #f7d354;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: .5s;
+}
+
+.home .links a:hover,
+.listadinamica .links a:hover {
+  background-color: #222222;
+  color: #f7d354;
+}
+
+.listadinamica {
+  animation: changeHome 3s ease-in-out forwards;
+}
+.listadinamica h1 {
+  animation: changeHomeH1 3s ease-in-out forwards;
+}
+
+.listadinamica .links {
+  animation: changeHomeLinks 3s ease-in-out forwards;
+}
+
+.listadinamica .links a {
+  animation: changeHomeLinksa 3s ease-in-out forwards;
+}
+
+@keyframes changeHome {
+  from {
+    height: 100vh;
+    text-align: center;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  to {
+    height: 70px;
+    text-align: center;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    padding: 0 8rem 0 4rem;
+  }
+}
+
+@keyframes changeHomeH1 {
+  from {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  to {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto 0;
+  }
+}
+
+@keyframes changeHomeLinks {
+  from {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem;
+  }
+
+  to {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto 0;
+  }
+}
+
+@keyframes changeHomeLinksa {
+  from {
+    background-color: #f7d354;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: .5s;
+  }
+
+  to {
+    margin: auto 0;
+    background-color: #f7d354;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem;
+    border-radius: 6px;
+    transition: .5s;
+  }
+}
