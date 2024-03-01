@@ -1,14 +1,14 @@
 // src/App.js
 import { Outlet } from "react-router-dom";
 import './App.css';
-import Home from "./pages/Home";
+import NavHome from './components/NavHome.jsx'
 
 function App() {
 
     return (
         <div className="App">
-            <Home />
 
+            <NavHome />
             <Outlet />
         </div>
     );
