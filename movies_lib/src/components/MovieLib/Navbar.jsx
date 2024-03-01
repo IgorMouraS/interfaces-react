@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
 
-import '../styles/Navbar.css'
+import '../../styles/Navbar.css'
 
 const Navbar = () => {
 

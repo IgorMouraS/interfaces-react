@@ -1,9 +1,9 @@
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 
-import '../styles/NavHome.css'
+import '../../styles/NavApp.css'
 
-const NavHome = () => {
+const NavApp = () => {
 
   const { primeiraParteDaURL } = useParams();
   const [parametroAtual, setParametroAtual] = useState(primeiraParteDaURL);
@@ -27,4 +27,4 @@ const NavHome = () => {
   )
 }
 
-export default NavHome
+export default NavApp

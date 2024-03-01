@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import '../styles/Home.css';
 import data_home from '../data/data-home';
-import List from '../components/List';
-import ItemCount from '../components/ItemCount';
+import List from '../components/ListaDinamica/List';
+import ItemCount from '../components/ListaDinamica/ItemCount';
 
 function ListaDinamica() {
   const [items, setItems] = useState([]);

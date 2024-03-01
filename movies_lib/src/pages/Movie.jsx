@@ -10,7 +10,7 @@ import {
 import { fetchMovie } from "../data/api"
 
 import '../styles/Movie.css';
-import MovieCard from '../components/MovieCard';
+import MovieCard from '../components/MovieLib/MovieCard';
 
 const movieURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;

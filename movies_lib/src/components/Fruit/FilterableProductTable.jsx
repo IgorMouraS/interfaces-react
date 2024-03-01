@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductTable from './ProductTable';
 import SearchBar from './SearchBar';
 
-import '../styles/FilterableProductTable.css'
+import '../../styles/FilterableProductTable.css'
 
 function FilterableProductTable({ products }) {
     const [filterText, setFilterText] = useState('');
